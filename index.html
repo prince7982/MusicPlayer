@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" style="border-radius: 30px;" href="images/favicon.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="player-container" id="musicCard">
+        <!-- ---song--- -->
+         <div class="img-container">
+         <img src="images/music1.jpeg" alt="album">
+         </div>
+         <!-- ---title--- -->
+          <h2 id="title">Love song</h2>
+          <h3 id="artist">Prince kumar</h3>
+          <!-- ---audio--- -->
+           <audio src="music/music1.mp3"></audio>
+
+           <!-- ---progress--- -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="duration-wrapper">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">3:45</span>
+                </div>
+            </div>
+
+            <!-- ---controls--- -->
+             <div class="player-controls">
+                <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+                <i class="fa-solid fa-play main-button" id="play" title="play"></i>
+                <i class="fa-solid fa-forward" id="next" title="next"></i>
+             </div>
+    </div>
+
+    
+    <!-- ---------Javascript-------------- -->
+     <script src="script.js"></script>
+</body>
+</html>
