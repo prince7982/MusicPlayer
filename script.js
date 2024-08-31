@@ -164,8 +164,23 @@ nextBtn.addEventListener('click',nextSong);
 music.addEventListener('timeupdate',updateProgressBar);
 progressContainer.addEventListener('click',setProgressBar);
 
-//Auto-play next song when current song ends
-music.addEventListener('ended',nextSong);
+// Add this event listener for automatic playback of the next song
+music.addEventListener('ended', () => {
+    nextSong(); // Play the next song
+    changeBackgroundColor(); // Change the card's background color
+});
+
+// Ensure the existing next song functionality changes the color
+nextBtn.addEventListener('click', () => {
+    nextSong(); // Play the next song
+    changeBackgroundColor(); // Change the card's background color
+});
+
+// Ensure the existing previous song functionality changes the color
+prevBtn.addEventListener('click', () => {
+    prevSong(); // Play the previous song
+    changeBackgroundColor(); // Change the card's background color
+});
 
 //this is optional here start--
 

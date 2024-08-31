@@ -112,7 +112,7 @@ h3{
         width: 95vw;
     }
     .img-container{
-        left: 29px;
+        left: 6%;
     }
     h2{
         font-size: 20px;
@@ -122,6 +122,6 @@ h3{
     }
     .player-controls{
         top:-10px;
-        left: 100px;
+        left: 25%;
     }
 }
