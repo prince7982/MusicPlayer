@@ -62,7 +62,7 @@ const songs = [
         displayName:"Big Dawgs",
         artist:"by Hanumankind, and Kalmi"
     }
-]
+];
 
 // Check if playing
 let isPlaying = false;
@@ -159,26 +159,21 @@ function setProgressBar(e){
 
 
 //Event Listners
-prevBtn.addEventListener('click',prevSong);
-nextBtn.addEventListener('click',nextSong);
+prevBtn.addEventListener('click', () => {
+    prevSong();
+    changeBackgroundColor();
+});
+nextBtn.addEventListener('click', () => {
+    nextSong();
+    changeBackgroundColor();
+});
+
 music.addEventListener('timeupdate',updateProgressBar);
 progressContainer.addEventListener('click',setProgressBar);
 
 // Add this event listener for automatic playback of the next song
 music.addEventListener('ended', () => {
     nextSong(); // Play the next song
-    changeBackgroundColor(); // Change the card's background color
-});
-
-// Ensure the existing next song functionality changes the color
-nextBtn.addEventListener('click', () => {
-    nextSong(); // Play the next song
-    changeBackgroundColor(); // Change the card's background color
-});
-
-// Ensure the existing previous song functionality changes the color
-prevBtn.addEventListener('click', () => {
-    prevSong(); // Play the previous song
     changeBackgroundColor(); // Change the card's background color
 });
 
@@ -192,8 +187,6 @@ let currentColorIndex = 0;
 
 // Get references to the DOM elements
 const musicCard = document.getElementById('musicCard');
-const next = document.getElementById('next');
-const prev = document.getElementById('prev');
 
 // Function to change the background color
 function changeBackgroundColor() {
@@ -203,14 +196,4 @@ function changeBackgroundColor() {
     musicCard.style.backgroundColor = colors[currentColorIndex];
 }
 
-// Add event listeners to the buttons
-next.addEventListener('click', () => {
-    // Logic to play the next song can go here
-    changeBackgroundColor(); // Change the card's background color
-});
-
-prev.addEventListener('click', () => {
-    // Logic to play the previous song can go here
-    changeBackgroundColor(); // Change the card's background color
-});
 
