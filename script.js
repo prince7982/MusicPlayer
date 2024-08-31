@@ -164,7 +164,10 @@ nextBtn.addEventListener('click',nextSong);
 music.addEventListener('timeupdate',updateProgressBar);
 progressContainer.addEventListener('click',setProgressBar);
 
-//this is optional
+//Auto-play next song when current song ends
+music.addEventListener('ended',nextSong);
+
+//this is optional here start--
 
 // List of colors to cycle through
 const colors = ['#0BDA51','#AA88AA','#317873','#FF004F','#00FFBF', '#667F8F', '#0085A3', '#926AA0', '#827283', '#007FFF','#324AB2','#CCCCFF'];
