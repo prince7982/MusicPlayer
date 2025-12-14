@@ -14,13 +14,13 @@ const nextBtn = document.getElementById('next');
 const songs = [
     {
         name:'music1',
-        displayName:"Tumhare Hi Rahenge Hum",
-        artist:"by Sachin-Jigar, Varun Jain, Shilpa Rao, and Amitabh Bhattacharya"
+        displayName:'Dhurandhar - Title Track',
+        artist:"by Shashwat Sachdev, Hanumankind, and Jasmine Sandlas"
     },
     {
         name:'music2',
-        displayName:"Chuttamalle (From) 'Devara Part'",
-        artist:"by Shilpa Rao, Anirudh Ravichander, and Ramajogayya Sastry"
+        displayName:'Ishq Jalakar - Karvaan',
+        artist:"by Shashwat Sachdev, Shahzad Ali, and Subhadeep Das Chowdhury"
     },
     {
         name:'music3',
@@ -61,6 +61,31 @@ const songs = [
         name:'music10',
         displayName:"Big Dawgs",
         artist:"by Hanumankind, and Kalmi"
+    },
+    {
+        name:'music11',
+        displayName:"Tumhare Hi Rahenge Hum",
+        artist:"by Sachin-Jigar, Varun Jain, Shilpa Rao, and Amitabh Bhattacharya"
+    },
+    {
+        name:'music12',
+        displayName:"Chuttamalle (From) 'Devara Part'",
+        artist:"by Shilpa Rao, Anirudh Ravichander, and Ramajogayya Sastry"
+    },
+    {
+        name:'music13',
+        displayName:'Ez-Ez (From "Dhurandhar")',
+        artist:"by Diljit Dosanjh, Hanumankind, and Raj Ranjodh"
+    },
+    {
+        name:'music14',
+        displayName:'Ramba Ho (From "Dhurandhar")',
+        artist:"by Shashwat Sachdev, Madhubanti Bagchi, Bappi Lahiri, and Indiwar"
+    },
+    {
+        name:'music15',
+        displayName:'Shararat (From "Dhurandhar")',
+        artist:"by Shashwat Sachdev, Madhubanti Bagchi, Jasmine Sandlas"
     }
 ];
 
@@ -180,7 +205,7 @@ music.addEventListener('ended', () => {
 //this is optional here start--
 
 // List of colors to cycle through
-const colors = ['#0BDA51','#AA88AA','#317873','#FF004F','#00FFBF', '#667F8F', '#0085A3', '#926AA0', '#827283', '#007FFF','#324AB2','#CCCCFF'];
+const colors = ['#0BDA51','#AA88AA','#317873','#FF004F','#00FFBF', '#667F8F', '#0085A3', '#926AA0', '#827283', '#007FFF','#d11eb0ff','#3737daff'];
 
 // Variable to keep track of the current color index
 let currentColorIndex = 0;
